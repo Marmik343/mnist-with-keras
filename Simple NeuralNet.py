@@ -14,7 +14,7 @@ print(x_train.shape , y_train.shape)
 x_train , x_test = x_train/255 , x_test/255
 
 model = keras.models.Sequential([
-    keras.layers.Flatten(input_shape=(28,28)), #reduce dimension from oroginal i.e (28,28) of anyone image
+    keras.layers.Flatten(input_shape=(28,28)), #reduce dimension from original i.e (28,28) of the images
     keras.layers.Dense(128,activation='relu'), #1st hidden layer 
     keras.layers.Dense(10) #final layer 10 because we have 10 classifications   
     ])
